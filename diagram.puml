@@ -1,0 +1,16 @@
+@startuml
+
+title Diagram Module project 
+
+package "Module project" {
+  [text1.txt] --> [text2.txt] : "Uses"
+}
+
+note right of [text1.txt]
+  text1.txt contains the basic description of the first module.
+end note
+
+note left of [text2.txt]
+  text2.txt depends on the data provided text1.txt.
+end note
+@enduml
